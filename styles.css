@@ -98,14 +98,8 @@ a {
 }
 
 
-/* .projects {
-    /* grid-area: 1/1/2/3; */
-    /* display: grid;
-    grid-template-rows: 30px repeat(3,1fr);
-    grid-template-columns: 1fr 1fr; */
-    
 
-    
+
 
 
 
@@ -123,11 +117,14 @@ a {
 .projects {
     grid-area: 1/1/3/2;
 
-    background-color: blue;
     display: grid;
     grid-template-rows: 30px repeat(3, 1fr);
-        grid-template-columns: 1fr 1fr;
-        */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bold;
+        
 }
 
 .announcements {
@@ -139,13 +136,19 @@ a {
 }
 
 
-/* .projects:first-child {
+
+.projects .title {
     grid-area: 1/1/2/3;
-    color: azure;
-} */
+    /* color: azure; */
+} 
 
 .project-card {
     background-color: white;
+    border-radius: 5px;
+    border-left: 7px solid;
+    border-color: orange;
+    font-size:medium;
+    padding: 20px 10px;
 
 }
 
