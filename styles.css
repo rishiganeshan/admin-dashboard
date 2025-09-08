@@ -1,7 +1,20 @@
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "roboto";
 }
+
+
+
 .grid-container {
     display: grid;
     width: 100vw;
@@ -10,10 +23,7 @@
     grid-auto-columns: 1fr 3fr;
 }
 
-.grid-container > * {
-    border-color: black;
-    border-style: solid;
-}
+
 
 .header {
     display: grid;
@@ -39,6 +49,12 @@
 
 .top-right > div {
     font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
 }
 
 
@@ -168,6 +184,7 @@ a {
 
 
 .main-content {
+        box-shadow: 0px -3px 5px 0px rgb(157, 157, 157);
         grid-area: 2/2/3/3;
         display: grid;
         grid-template-rows: 50px 1fr 50px 1fr;
@@ -175,6 +192,7 @@ a {
         background-color: rgb(224, 224, 224);
         padding: 20px 10px;
         gap: 20px;
+
 
 }
 
@@ -251,7 +269,7 @@ a {
 
 .card-body {
     font-size: small;
-    font-weight: 100;
+    font-weight:300;
     color: rgb(96, 96, 96);
 }
 
@@ -274,6 +292,40 @@ a {
 .announcements-body {
     font-size: small;
     color: rgb(96, 96, 96);
+}
+
+.pic {
+    height: 30px;
+}
+
+.trending.grid {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+img.one {
+    grid-row-start: 1;
+}
+img.two {
+    grid-row-start: 2;
+}
+img.three {
+    grid-row-start: 3;
+}
+img.four {
+    grid-row-start: 4;
+}
+
+.trending.grid > div > div + div {
+    color: rgb(96, 96, 96);
+    font-size: small;
+}
+
+.trending.grid > img {
+    justify-self: end;
+
 }
 
 
