@@ -44,6 +44,31 @@ input {
     border-style: none;
 }
 
+.user-info {
+    display: flex;
+    gap: 10px;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.user-info img {
+    height: 50px;
+}
+
+.text-container {
+    flex-grow: 1;
+}
+
+.small-text {
+    font-size: small;
+    font-weight: bold;
+}
+.big-text {
+    font-size: large;
+    font-weight: bold;
+}
+
+
 
 
 
