@@ -59,7 +59,15 @@
 .main-icons {
     display: grid;
     /* width: 100%; */
-    grid-template-rows: repeat(7,1fr);
+    grid-template-rows: repeat(6,50px);
+    grid-auto-columns: 1fr;
+
+}
+
+.help-icons {
+    display: grid;
+    /* width: 100%; */
+    grid-template-rows: repeat(3, 50px);
     grid-auto-columns: 1fr;
 
 }
