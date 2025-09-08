@@ -22,6 +22,24 @@
     grid-template-rows: 1fr 1fr;
 }
 
+.top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-right > svg {
+    height: 20px;;
+}
+
+.top-right > img {
+    height: 30px;
+}
+
+.top-right > div {
+    font-weight: bold;
+}
 
 
 
