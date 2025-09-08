@@ -25,6 +25,24 @@
 
 
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.search-bar svg {
+    width: 20px;
+}
+
+input {
+    flex-grow: 1;
+    height: 30px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 30px;
+    border-style: none;
+}
 
 
 
@@ -148,6 +166,7 @@ a {
     grid-area: 2/2/3/3;
     display: grid;
     background-color: white;
+
 }
 
 .trending.title {
@@ -166,6 +185,7 @@ a {
     background-color: white;
     border-radius: 5px;
     padding: 20px;
+    gap: 10px
 
 }
 
@@ -200,6 +220,15 @@ a {
 
 .card-icons svg {
     width: 20px;
+}
+
+.announcements-title {
+    font-weight: bold;
+    font-size: smaller;
+}
+.announcements-body {
+    font-size: small;
+    color: rgb(96, 96, 96);
 }
 
 
