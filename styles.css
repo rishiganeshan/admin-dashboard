@@ -8,9 +8,6 @@
     height: 100vh;
     grid-auto-rows: 1fr 4fr;
     grid-auto-columns: 1fr 3fr;
-    /* padding: 0%; */
-    
-
 }
 
 .grid-container > * {
@@ -25,10 +22,28 @@
     grid-template-rows: 1fr 1fr;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .buttons {
     grid-area: 1/2/3/3;
 
 }
+
 .sidebar {
     grid-area: 1/1/3/2;
     display: grid;
@@ -37,51 +52,38 @@
 
 
 }
-.main-content {
-    grid-area: 2/2/3/3;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 2fr 1fr;
-    background-color: rgb(224, 224, 224);
 
-}
-
-.projects {
-    grid-area: 1/1/3/2;
-}
-
-/* .nav-button {
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-auto-columns: 1fr 1fr;
-} */
 
 .main-icons {
     display: grid;
-    /* width: 100%; */
     grid-template-rows: repeat(6,50px);
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
 
 }
 
 .help-icons {
     display: grid;
-    /* width: 100%; */
     grid-template-rows: repeat(3, 50px);
     grid-auto-columns: 1fr;
 
 }
-
 
 a svg {
     width: 2rem;
     margin: 10px
 }
 
+.dashboard-title a svg {
+    width: 3rem;
+    margin: 10px
+}
+
+
 
 
 .sidebar {
     color: white;
+    font-weight:bold;
 }
 
 .dashboard-title {
@@ -94,3 +96,56 @@ a {
     display: flex;
     align-items: center;
 }
+
+
+/* .projects {
+    /* grid-area: 1/1/2/3; */
+    /* display: grid;
+    grid-template-rows: 30px repeat(3,1fr);
+    grid-template-columns: 1fr 1fr; */
+    
+
+    
+
+
+
+
+.main-content {
+        grid-area: 2/2/3/3;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
+        background-color: rgb(224, 224, 224);
+
+    }
+
+
+.projects {
+    grid-area: 1/1/3/2;
+
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 30px repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
+        */
+}
+
+.announcements {
+    grid-area: 1/2/2/3;
+}
+
+.trending {
+    grid-area: 2/2/3/3
+}
+
+
+/* .projects:first-child {
+    grid-area: 1/1/2/3;
+    color: azure;
+} */
+
+.project-card {
+    background-color: white;
+
+}
+
